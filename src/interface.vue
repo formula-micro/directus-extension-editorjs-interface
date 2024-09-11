@@ -27,6 +27,11 @@
 </template>
 
 <script setup lang="ts">
+import "./editorjs-ui.css";
+import "./editorjs-components.css";
+import "./editorjs-content-reset.css";
+import "./custom-plugins/price-listing.css";
+import "./custom-plugins/spacer.css";
 import { ref, onMounted, onUnmounted, watch, withDefaults } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useApi, useStores } from '@directus/extensions-sdk';
@@ -244,8 +249,8 @@ function getSanitizedValue(value: any): EditorJS.OutputData | null {
 }
 </style>
 
-<style src="./editorjs-ui.css"></style>
-<style src="./editorjs-components.css"></style>
-<style src="./editorjs-content-reset.css"></style>
-<style src="./custom-plugins/price-listing.css"></style>
-<style src="./custom-plugins/spacer.css"></style>
+<!-- <style src="./editorjs-ui.css"></style> -->
+<!-- <style src="./editorjs-components.css"></style> -->
+<!-- <style src="./editorjs-content-reset.css"></style> -->
+<!-- <style src="./custom-plugins/price-listing.css"></style> -->
+<!-- <style src="./custom-plugins/spacer.css"></style> -->
