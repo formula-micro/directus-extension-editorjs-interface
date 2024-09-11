@@ -2,7 +2,7 @@
 
 Block-styled editor for rich media stories, outputs clean data in JSON. More info at https://editorjs.io/
 
-![](https://raw.githubusercontent.com/dimitrov-adrian/directus-extension-editorjs-interface/main/screenshot.png)
+![](https://raw.githubusercontent.com/formula-micro/directus-extension-editorjs-interface/main/screenshot.png)
 
 ## Installation
 
@@ -54,3 +54,5 @@ npm run build
 
 Then use `dist/index.js` in your custom `/extensions/interfaces` directory or in whatever you want.
 
+## Attribution
+This package was originally developed and maintained by [Adrian Dimitrov](https://github.com/dimitrov-adrian).
