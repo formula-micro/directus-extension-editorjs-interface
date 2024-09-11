@@ -1,0 +1,179 @@
+/* General components re-style */
+
+.codex-editor .cdx-attaches,
+.codex-editor .cdx-personality {
+	color: var(--theme--foreground);
+	background: var(--theme--background-normal);
+	border-color: var(--theme--border-color);
+	box-shadow: unset;
+}
+
+/* Paragraph */
+
+.codex-editor .ce-paragraph {
+	padding: 0;
+	font-weight: 400;
+	line-height: inherit;
+}
+.codex-editor .ce-paragraph[data-placeholder]:empty::before {
+	color: var(--theme--foreground-subdued);
+}
+
+/* Quote block */
+
+.codex-editor .cdx-block.cdx-quote {
+	padding-left: 22px;
+}
+
+/* Image Tool */
+
+.codex-editor .image-tool {
+	--bg-color: var(--theme--background-normal);
+	--front-color: var(--primary);
+	--border-color: var(--theme--border-color);
+}
+
+/* Personality */
+
+.codex-editor .cdx-personality__description {
+	font-weight: unset;
+	font-size: 0.9em;
+	font-style: oblique;
+}
+
+.codex-editor .cdx-personality .cdx-personality__photo {
+	background-color: transparent;
+}
+
+.codex-editor .cdx-personality__link {
+	color: var(--primary);
+	font-size: 0.72em;
+}
+
+/* Checklist */
+
+.codex-editor .cdx-checklist__item-checkbox {
+	background: transparent;
+	border-color: var(--theme--border-color);
+	border-width: var(--theme--border-width);
+	border-radius: 4px;
+}
+
+.codex-editor .cdx-checklist__item-text {
+	padding: 3px 0;
+}
+
+.codex-editor .cdx-checklist__item--checked .cdx-checklist__item-checkbox {
+	background: var(--primary);
+	border-color: var(--primary);
+}
+
+.codex-editor .cdx-checklist__item--checked .cdx-checklist__item-checkbox::after {
+	top: 4px;
+	left: 3px;
+}
+
+/* Lists */
+
+.codex-editor .ce-block ul,
+.codex-editor .ce-block ol {
+	font-size: inherit !important;
+}
+
+/* Attaches */
+
+.cdx-attaches--with-file .cdx-attaches__file-icon {
+	padding: 5px;
+	background: var(--theme--background-normal);
+	border-radius: var(--theme--border-radius);
+}
+
+.codex-editor .cdx-attaches--with-file .cdx-attaches__title {
+	color: var(--theme--foreground);
+}
+
+.codex-editor .cdx-attaches__size {
+	color: var(--theme--foreground-subdued);
+}
+
+.cdx-attaches--with-file .cdx-attaches__download-button svg {
+	fill: var(--v-button-background-color);
+}
+
+.codex-editor .cdx-attaches--with-file .cdx-attaches__file-icon::before {
+	background: transparent;
+}
+
+/* InlineCode */
+
+.codex-editor .ce-block .inline-code {
+	padding: 4px;
+	color: var(--v-chip-background-color);
+	font-family: monospace;
+	background-color: var(--v-chip-color);
+	border-radius: 4px;
+}
+
+/* Warning */
+.codex-editor .cdx-warning::before {
+	right: -30px;
+	left: unset;
+}
+
+/* Marker */
+
+.codex-editor .cdx-marker {
+	color: var(--warning-175);
+	background: var(--warning-alt);
+	outline: 2px solid var(--warning-alt);
+}
+
+/* tc module */
+
+.codex-editor .tc-wrap {
+	--color-background: var(--v-list-item-color-hover);
+	--color-border: var(--theme--border-color);
+	--color-background-hover: var(--v-list-item-background-color-hover);
+}
+
+.codex-editor .tc-popover {
+	--color-background: var(--theme--background-normal);
+	--color-border: var(--theme--background-normal);
+	--color-background-hover: var(--theme--background-normal);
+}
+
+.tc-cell--selected,
+.tc-cell--selected::after,
+.tc-row--selected,
+.tc-row--selected::after {
+	background: var(--background-highlight);
+}
+
+.tc-toolbox {
+	--toggler-dots-color: var(--theme--foreground);
+	--toggler-dots-color-hovered: var(--theme--foreground);
+}
+
+.tc-toolbox__toggler:hover {
+	fill: var(--theme--background-normal) !important;
+}
+
+.codex-editor .tc-toolbox__toggler svg rect:first-child {
+	/* This is very ugly, but there no other way to set background of the element */
+	fill: var(--theme--background-normal) !important;
+	border-radius: var(--theme--border-radius);
+}
+
+.codex-editor .tc-toolbox__toggler:hover svg rect:first-child {
+	/* This is very ugly, but there no other way to set background of the element */
+	fill: var(--theme--background-normal) !important;
+}
+
+.tc-add-column:hover,
+.tc-add-row:hover {
+	background-color: var(--primary-alt);
+}
+
+.tc-add-row:hover::before {
+	background-color: var(--v-list-item-background-color-hover);
+}
