@@ -5,6 +5,9 @@
     "email": "info@formula-micro.dk",
     "name": "Formula Micro Bornholm A/S"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "gpl-3.0",
   "repository": {
     "type": "git",
