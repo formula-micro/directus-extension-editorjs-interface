@@ -6,13 +6,7 @@ Block-styled editor for rich media stories, outputs clean data in JSON. More inf
 
 ## Installation
 
-In your Directus installation root
-
-```
-npm install directus-extension-editorjs
-```
-
-Restart directus
+Enable non-sandboxed extensions in the Marketplace, by adding the environment variable "MARKETPLACE_TRUST: all" in the docker-compose file. Or refer to the Official Guide for details on installing the extension manually.
 
 ## Usage
 
